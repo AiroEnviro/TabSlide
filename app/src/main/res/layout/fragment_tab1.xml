@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context=".Tab1">
+    <LinearLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="30dp"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/section_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bike Services"
+                android:gravity="center"
+                android:textAllCaps="true"
+                android:textColor="#FFF"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:textSize="30dp"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/Bike_m"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/button_a"
+                android:drawableTop="@drawable/cycle"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:text="Mechanics"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/Bike_e"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@+id/Car_m"
+                android:background="@drawable/button_b"
+                android:drawableTop="@drawable/cycle"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:text="Electrical"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:layout_marginLeft="20dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/Bike_t"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button_c"
+                android:drawableTop="@drawable/cycle"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:text="Tyre Flat"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/Bike_p"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button_d"
+                android:drawableTop="@drawable/cycle"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:text="Petrol"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:layout_marginLeft="20dp"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
